@@ -1,0 +1,439 @@
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 200px;
+    background-color: white;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+#hed{
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    gap: 10px;
+}
+.hed-content{
+    cursor: pointer;
+    font-size: 1rem;
+    align-items: center;
+}
+.hed-content svg{
+    height: 1rem;
+    width: 1rem;
+}
+.hed-content:hover{
+    color:#14a800;
+    cursor: pointer;
+}
+.hed-content svg:hover{
+    
+}
+#hed2{
+    display: flex;
+    gap: 10px;
+    margin-right: 20px;
+}
+.fixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+#menu{
+    background-color: blacks;
+    height: 36rem;
+    width: 100vw;
+    z-index: 2;
+    visibility: hidden;
+}
+#menu-toggle:checked ~menu{
+    visibility: visible;
+}
+section{
+    margin-top: 50px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    height: 800px;
+    background-color: white;
+}
+#sect{
+    color: white;
+    background-color: green;
+    background-image: url(https://res.cloudinary.com/upwork-cloud-acquisition-prod/image/upload/v1741896805/brontes/hero/ApartmentCoder.png);
+    margin-left: auto;
+    margin-right: auto;
+    width: 1150px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    background-size: cover;
+}
+#child2{
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-bottom: 35px;
+}
+#child{
+    width: fit-content;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    border-radius: 20px;
+    padding: 30px;
+    background-color: rgba(51, 51, 51, 0.6);
+    color: white;
+    backdrop-filter: blur(20px);
+
+}
+#tabs {
+    background-color:rgb(110, 104, 115);
+    height: 40px;
+    width: 530px;
+    border-radius: 50px;
+
+    padding: 0 50px;
+    justify-content: space-between;
+}
+.centering {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.active {
+    margin-right: -3.1rem;
+    padding: 0 7rem;
+    border: 3px;
+    border: white;
+    border-style: ridge;
+    border-radius: 2rem;
+}
+.child-input{
+    height: 40px;
+    width: 530px;
+    border-radius: 50px;
+    border: none;
+    padding: 5px;
+    margin-top: 30px;
+}
+#child3{
+    height: 400px;
+    width: 500px;
+    background-color: blueviolet;
+    border-radius: 5px;
+    margin-left: -50px;
+}
+#child4{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+#child5{
+    display: flex;
+    flex-direction: column;
+}
+.b{
+    font-size: 20px;
+}
+#button{
+    width: 200px;
+    height: 40px;
+    background-color: rgb(33, 167, 33);
+    border: none;
+    border-radius: 5px;
+}
+#button2{
+    width: 200px;
+    height: 40px;
+    background-color: white;
+    border-color:rgb(33, 167, 33);
+    border-radius: 7px;
+    border-width: 2px;
+
+}
+.categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding: 0 1.4rem;
+}
+
+.card {
+    background: #f9f9f9;
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+    transition: box-shadow 0.2s ease;
+}
+
+.card:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.card h2 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+.star {
+    color: #14a800;
+    font-weight: bold;
+}
+.span-grid{
+    margin-left: 2rem;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    gap: 0;
+    max-height: 100%;
+  }
+  
+  .text-section {
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    margin-bottom: auto;
+    width: 71.5rem;
+    height: 36rem;
+    color: white;
+    background-color: #1b5c58;
+    padding: 40px;
+    font-family: sans-serif;
+  }
+  .text-section ul{
+    list-style: none;
+  }
+  .text-section h1 span {
+    font-size: 2.5em;
+    display: block;
+    font-weight: 600;
+  }
+  
+  .image-section {
+
+  }
+  
+.image-section img {
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    width: 100%;
+    flex: 1;
+    height: 36rem;
+    object-fit: cover;
+}
+.container2{
+    background-color: #14a800;
+    border-radius: 1rem;
+    background-image: url(https://res.cloudinary.com/upwork-cloud-acquisition-prod/image/upload/c_scale/brontes/delivery-models/find-talent-2x.jpg);
+    height: 35rem;
+    width: 72rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    padding-top: 1rem;
+    padding-left: 2.8rem;
+    padding-right: 2.8rem;
+}
+#threemen-father{
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 4.2rem;
+}
+.threemen{
+    height: 10rem;
+    width: 20rem;
+    background-color: #14a800;
+    color: white;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+}
+.threemen:hover{
+    background-color: white;
+    color: #14a800;
+}
+.threemen div{
+    margin-top: 1.4rem;
+}
+h3{
+    font-size: 1.9rem;
+    font-weight: 500;
+}
+#turner{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.turn-upwork{
+    padding-top: 5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-color: #f9f9f9;
+    height: 37.5rem;
+    width: 45rem;
+    border-radius: 1rem;
+}
+.turn-upwork h2{
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+.turn-upwork h4{
+    font-size: 1.9rem;
+    font-weight: 500;
+    line-height: 4rem;
+}
+.turn-upwork2{
+    height: 37.5rem;
+    width: 25rem;
+    background-color: #14a800;
+    color: white;
+    border-radius: 1rem;
+}
+.text-image {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    gap: 0;
+    max-height: 100%;
+}
+  
+.text-section2 {
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    height: 45rem;
+    width: 36rem;
+    margin-bottom: 0.3rem;
+    color: white;
+    background-color: #086add;
+    padding: 40px;
+    font-family: sans-serif;
+}
+.text-section2 ul{
+    list-style: none;
+}
+.text-section2 h1 span {
+    font-size: 2.5em;
+    display: block;
+    font-weight: 600;
+}
+  
+.image-section2 {
+
+}
+  
+.image-section2 img {
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    width: 36rem;
+    height: 45rem;
+    object-fit: cover;
+}
+#sixth-sect{
+    margin-top: -3.5rem;
+    height: 50rem;
+    display: flex;
+    flex-direction: column;
+}
+#color-container{
+    display: flex;
+    gap: 2rem;
+}
+#green-box{
+    width: 33rem;
+    height: 28rem;
+    background-color: rgb(12, 94, 96);
+    padding: 1.5rem;
+    border-radius: 0.8rem;
+}
+#orange-box{
+    width: 33rem;
+    height: 28rem;
+    flex: 1;
+    background-color: orangered;
+    padding: 1.5rem;
+    border-radius: 0.8rem;
+}
+#seven-sect{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: start;
+    margin-left: -50px;
+}
+#seven-sect li{
+    margin-bottom: 10px;
+}
+#seven-sect li:hover{
+    cursor: pointer;
+    color: #14a800;
+}
+#air1{
+    color: rgb(206, 200, 192)
+}
+#air2{
+    color: rgb(206, 200, 192)
+}
+#air3{
+    color: rgb(206, 200, 192)
+}
+#air1:hover{
+    color: #14a800;
+}
+#air2:hover{
+    color: #14a800;
+}
+#air3:hover{
+    color: #14a800;
+}
+
+#foot{
+    padding: 1.5rem;
+    margin-top: -60px;
+}
+.foot-black-container{
+    padding: 60px;
+    display: flex;
+    border-radius: 0.7rem;
+    height: 40rem;
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+.foot-black-container ul{
+    list-style: none;
+    font-size: 14px;
+    font-weight: 400;
+}
+.foot-black-container li{
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+.foot-black-container p{
+    color: rgb(182, 181, 181);
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
